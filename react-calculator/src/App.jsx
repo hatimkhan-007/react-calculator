@@ -3,13 +3,13 @@ import { useState } from 'react';
 
 
 function App() {
-  const [result, setResult] = useState("");
+  const [display, setDisplay] = useState("0");
   
   return (
     <div className="app">
       <div className="display">
-        <input type="text" value={result} readOnly />
-        <h1>Digital Calculator</h1>
+        <h1>{display}</h1>
+        <button onClick={() => setDisplay("7")}>7</button>
       </div>
     </div>
   )
